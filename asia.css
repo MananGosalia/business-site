@@ -1,0 +1,1159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+   min-height: 200vh;
+   background-color: #00B800;
+}
+
+body {
+   font: 600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+   background-image: url("green5.png");
+   background-size: cover;
+	height: 100vh;
+   color: black;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+	font-family: "Hind";
+}
+header.sticky {
+	padding: 5px 100px;
+	background: #F5F5F5;
+	font-family: "Hind";
+}
+header .logo {
+	position: relative;
+	font-weight: 700;
+	color: #F5F5F5;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+	font-family: "Hind";
+}
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Hind";
+}
+header ul li {
+	position: relative;
+	list-style: none;
+	font-family: "Hind";
+}
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #F5F5F5;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+	font-family: "Hind";
+	font-size: 20px;
+}
+header ul li a:hover {
+	text-decoration: underline;
+	color: black;
+}
+header.sticky .logo, header.sticky ul li a {
+	color: #000;
+	font-family: "Hind";
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {display: block; }
+  
+  .ddtext1{
+	position: relative;
+	left: -5px;
+  }
+  .ddtext1:hover{
+	  color: #00B800;
+  }
+  
+  .ddtext2{
+	position: relative;
+	left: -15px;
+  }
+
+  .ddtext2:hover{
+   color: #14adb3
+}
+  
+  .ddtext3{
+	position: relative;
+	left: -20px;
+  }
+
+  .ddtext3:hover{
+   color: #E0A800;
+}
+.information {
+	background: linear-gradient( rgb(24, 23, 23, 0.4), rgb(24, 23, 23, 0.4)), url("blackbg.jpg");
+	background-size: cover;
+	height: 100vh;
+}
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 25s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+a {
+   color: inherit;
+}
+
+.modal-window div:not(:last-of-type) {
+   margin-bottom: 15px;
+}
+small {
+   color: darkmagenta;
+}
+.btn i {
+   padding-right: 0.3em;
+}
+ 
+ 
+*, *:before, *:after{
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing:border-box;
+ box-sizing: border-box;
+}
+
+
+.modal-window {
+   position: fixed;
+   background-color: rgba(255, 255, 255, 0.25);
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 999;
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.7s;
+}
+.modal-window:target {
+   visibility: visible;
+   opacity: 1;
+   pointer-events: auto;
+  border-radius: 20%;
+}
+.modal-window > div {
+   width: 650px;
+  height: 700px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 2em;
+   background-image: url("green1 (1).png");
+   border-radius: 5%;
+   z-index: 100;
+}
+.modal-window header {
+   font-weight: bold;
+}
+.modal-window h1 {
+   font-size: 150%;
+   margin: 0 0 15px;
+}
+
+.modal-close {
+   color: blue;
+   line-height: 50px;
+   position: relative;
+    left: 560px;
+   text-align: center;
+   top: 20px;
+   width: 70px;
+   text-decoration: none;
+}
+.modal-close:hover {
+   color: black;
+}
+.modal-gal {
+   color: blue;
+   line-height: 50px;
+   position: relative;
+    left: -20px;
+   text-align: center;
+   top: 20px;
+   width: 70px;
+   text-decoration: none;
+}
+.modal-gal:hover {
+   color: black;
+}
+.disc{
+   color: black;
+} 
+.timebox{
+  position: relative;
+  top: 310px;
+  left: 443px;
+}
+.left{
+   position: relative;
+   top: -50px;
+   left: 140px;
+}
+.mapchina{
+   position: relative;
+   top: -50px;
+}
+.book{
+   position: relative;
+   top: -533px;
+   left: 450px;
+}
+.pictures{
+   position: relative;
+   top: -533px;
+   left: 350px;
+}
+.time{
+   position: relative;
+   top: -500px;
+   left: 440px;
+}
+.booking{
+   position: relative;
+   top: 10px;
+   left: 10px;
+}
+
+.btn2{
+   display: inline-block;
+    text-decoration: none;
+    background: #5498e6;
+    color: #FFF;
+    width: 150px;
+    height: 80px;
+    line-height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+    position: relative;
+    top: 22px;
+    left: -40px;
+  }
+  
+  .btn2:hover{
+     background: #668ad8;
+     color: black;
+     animation: light 2s linear infinite;
+  }
+
+.map{
+   position: relative;
+   top: -50px;
+}
+.paristimebox{
+   position: relative;
+   top: 310px;
+   left: 450px;
+}
+.city{
+   position: relative;
+   left: -27px;
+}
+.parishead{
+   position: relative;
+   top: -15px;
+   left: 15px;
+}
+#paristime{
+   position: relative;
+   top: -20px;
+   left: 10px;
+}
+@media (min-width: 200px) and (max-width: 899px) {
+  .container4 {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content4 {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+.container4 .title{
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px;
+}
+ 
+.asia-disc {
+   position: relative;
+   top: 20px;
+   text-align: center;
+   font-size: 18px;
+   color: black;
+}
+
+.content-title{
+   font-size: 12px;
+}
+ 
+.content4 .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content4:hover .content-overlay{
+ opacity: 1;
+}
+ 
+ 
+.content4:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+
+ .disc{
+   color: black;
+} 
+.timebox{
+  position: relative;
+  top: 310px;
+  left: 443px;
+}
+.left{
+   position: relative;
+   top: -50px;
+   left: 140px;
+}
+.mapchina{
+   position: relative;
+   top: -50px;
+}
+.book{
+   position: relative;
+   top: -533px;
+   left: 450px;
+}
+.pictures{
+   position: relative;
+   top: -533px;
+   left: 350px;
+}
+.time{
+   position: relative;
+   top: -500px;
+   left: 440px;
+}
+.booking{
+   position: relative;
+   top: 10px;
+   left: 10px;
+}
+
+.btn2{
+   display: inline-block;
+    text-decoration: none;
+    background: #5498e6;
+    color: #FFF;
+    width: 150px;
+    height: 80px;
+    line-height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+    position: relative;
+    top: 22px;
+    left: -40px;
+  }
+  
+  .btn2:hover{
+     background: #668ad8;
+     color: black;
+     animation: light 2s linear infinite;
+  }
+}
+.map{
+   position: relative;
+   top: -50px;
+}
+.paristimebox{
+   position: relative;
+   top: 310px;
+   left: 450px;
+}
+.city{
+   position: relative;
+   left: -27px;
+}
+.parishead{
+   position: relative;
+   top: -15px;
+   left: 15px;
+}
+#paristime{
+   position: relative;
+   top: -20px;
+   left: 10px;
+}
+.container {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+.container .title{
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px;
+}
+ 
+
+ 
+.content .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content:hover .content-overlay{
+ opacity: 1;
+}
+ 
+.content-image{
+ width: 100%;
+}
+ 
+.content-details {
+ position: absolute;
+ text-align: center;
+ padding-left: 1em;
+ padding-right: 1em;
+ width: 100%;
+ top: 50%;
+ left: 50%;
+ opacity: 0;
+ -webkit-transform: translate(-50%, -50%);
+ -moz-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ -webkit-transition: all 0.3s ease-in-out 0s;
+ -moz-transition: all 0.3s ease-in-out 0s;
+ transition: all 0.3s ease-in-out 0s;
+}
+ 
+.content:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+ 
+.content-details h3{
+ color: #fff;
+ font-weight: 500;
+ letter-spacing: 0.15em;
+ margin-bottom: 0.5em;
+ text-transform: uppercase;
+}
+ 
+.content-details p{
+ color: #fff;
+ font-size: 0.8em;
+}
+ 
+.fadeIn-bottom{
+ top: 80%;
+}
+
+
+
+
+.container2 {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content2 {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+
+ 
+
+ 
+.content2 .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content2:hover .content-overlay{
+ opacity: 1;
+}
+ 
+
+ 
+.content2:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+
+.huairou{
+    position: relative;
+    right: 35px;
+}
+.shaanxi{
+    position: relative;
+    right: 0px;
+}
+.shanghai{
+    position: relative;
+    right: 5px;
+}
+
+.shizuoka{
+    position: relative;
+    right: 10px;
+}
+.chiyoda{
+    position: relative;
+    right: 5px;
+}
+.kyoto{
+   position: relative;
+   right: -10px;
+}
+#kyototime{
+   position: relative;
+   right: -3px;
+}
+.tokyo{
+   position: relative;
+   right: -5px;
+}
+.dubai1{
+   position: relative;
+   left: 5px;
+}
+.dubai2{
+   position: relative;
+   left: 5px;
+}
+.dubai3{
+   position: relative;
+   left: 5px;
+}
+.dubai4{
+   position: relative;
+   left: 5px;
+}
+.container3 {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content3 {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+.container3 .title{
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px;
+}
+ 
+
+ 
+.content3 .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content3:hover .content-overlay{
+ opacity: 1;
+}
+ 
+ 
+.content3:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+.imagedivALL{
+display:flex;
+justify-content: center;
+align-items: center;
+
+flex-direction: row;
+} 
+
+
+@media (min-width: 900px){
+  .container {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+.container .title{
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px;
+}
+ 
+.asia-disc {
+   position: relative;
+   top: 20px;
+   text-align: center;
+   font-size: 18px;
+   color: black;
+}
+ 
+.content .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content:hover .content-overlay{
+ opacity: 1;
+}
+ 
+.content-image{
+ width: 100%;
+}
+ 
+.content-details {
+ position: absolute;
+ text-align: center;
+ padding-left: 1em;
+ padding-right: 1em;
+ width: 100%;
+ top: 50%;
+ left: 50%;
+ opacity: 0;
+ -webkit-transform: translate(-50%, -50%);
+ -moz-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ -webkit-transition: all 0.3s ease-in-out 0s;
+ -moz-transition: all 0.3s ease-in-out 0s;
+ transition: all 0.3s ease-in-out 0s;
+}
+ 
+.content:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+ 
+.content-details h3{
+ color: #fff;
+ font-weight: 500;
+ letter-spacing: 0.15em;
+ margin-bottom: 0.5em;
+ text-transform: uppercase;
+}
+ 
+.content-details p{
+ color: #fff;
+ font-size: 0.8em;
+}
+ 
+.fadeIn-bottom{
+ top: 80%;
+}
+
+.map{
+ position: relative;
+ left: 7px;
+ top: -45px;
+}
+ 
+.book{
+ position: relative;
+ top: -525px;
+ left: 460px;
+}
+
+.pictures{
+    position: relative;
+    top: -533px;
+    right: -350px;
+    padding: 5px;
+}
+
+.time{
+   position: relative;
+   top: -515px;
+   left: 450px;
+  }
+
+  .timebox{
+      position: relative;
+      left: 460px;
+      top: 290px;
+  }
+
+
+
+ .booking{
+    position: relative;
+    left: 10px;
+ }
+
+.city{
+   position: relative;
+   left: -30px;
+}
+
+.disc{
+   color: black;
+}
+
+.container2 {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content2 {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+
+.content2 .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content2:hover .content-overlay{
+ opacity: 1;
+}
+ 
+
+ 
+.content2:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+
+.beijing{
+  position: relative;
+  left: -5px;
+}
+.huairou{
+    position: relative;
+    right: 35px;
+}
+.shaanxi{
+    position: relative;
+    right: 10px;
+}
+.shanghai{
+    position: relative;
+    right: 15px;
+}
+
+.shizuoka{
+    position: relative;
+    right: 10px;
+}
+
+.chiyoda{
+    position: relative;
+    right: 10px;
+}
+
+#beijingtime{
+   position: relative;
+   left: -7px;
+}
+#shaanxitime{
+   position: relative;
+   left: -5px;
+}
+#shanghaitime{
+   position: relative;
+   left: -7px;
+}
+#kyototime{
+   position: relative;
+   left: -7px;
+}
+.tokyo{
+   position: relative;
+   right: 2px;
+}
+#tokyotime{
+   position: relative;
+   right: 5px;
+}
+#chiyodatime{
+   position: relative;
+   right: 5px;
+}
+
+#dubai1time{
+   position: relative;
+   right: 7px;
+}
+.dubai2{
+   position: relative;
+   left: -2px;
+}
+#dubai2time{
+   position: relative;
+   left: -5px;
+}
+#dubai3time{
+   position: relative;
+   left: -5px;
+}
+.dubai4{
+   position: relative;
+   left: -3px;
+}
+#dubai4time{
+   position: relative;
+   left: -5px;
+}
+.mapchina{
+   position: relative;
+   top: -45px;
+}
+
+.container3 {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content3 {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+.container3 .title{
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px;
+}
+ 
+
+ 
+.content3 .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content3:hover .content-overlay{
+ opacity: 1;
+}
+ 
+ 
+.content3:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+.imagedivALL{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+} 
+.container4 {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+}
+.content4 {
+ position: relative;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 400px;
+}
+.container4 .title{
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px;
+}
+ 
+
+ 
+.content4 .content-overlay {
+ background: rgba(0,0,0,0.7);
+ position: absolute;
+ height: 99%;
+ width: 100%;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ opacity: 0;
+ -webkit-transition: all 0.4s ease-in-out 0s;
+ -moz-transition: all 0.4s ease-in-out 0s;
+ transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content4:hover .content-overlay{
+ opacity: 1;
+}
+ 
+ 
+.content4:hover .content-details{
+ top: 50%;
+ left: 50%;
+ opacity: 1;
+}
+}
+ 
+.asia-head{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+section.footer {
+   background-color: purple;
+   position: relative;
+   padding:25px 0px;
+}
+.footer__content{
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: purple;
+
+}
+.footer__content img{
+   position: absolute;
+   top: -70px;
+   left: 30px;
+}
+.footer__heading{
+   position: relative;
+}
+.footer__heading h2 {
+   background-color: purple;
+   display: inline-block;
+   padding: 0px 10px;
+   position: relative;
+   z-index: 9999;
+}
+.footer__heading::after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 45%;
+   height: 5px;
+   margin: 0;
+   border-radius: 50px;
+   width: 20%;
+   transform: translate(-50% , -50%);
+   background-color: rgb(255, 255, 255);
+}
+.footer__content p {
+   font-size: 12px;
+   font-weight: 100;
+   padding: 10px 0px;
+}
+ul.social__media{
+   margin:0;
+   padding: 0;
+   display: inline-block;
+   margin-top: 15px;
+}
+ul.social__media li{
+  list-style-type:none;
+  display:inline-block;
+  margin-right: 15px;
+}
+ul.social__media li a{
+   color: #FFF;
+   font-size: 20px;
+}
+ul.social__media li {
+
+   text-align: center;
+   height: 45px;
+   width: 45px;
+   border-radius: 50px;
+   background-color: #fd554e;
+   line-height: 40px;
+   border: 2px solid #545d5d;
+   box-shadow: 0px 1px #FFF;
+   box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.55), 0 0px 20px 0px rgba(0, 0, 0, 0.55);
+}
+
+
+ul.bus__list{
+   padding: 0;
+   margin: 0;
+}
+
+ul.bus__list li{
+   list-style-type:none;
+   margin-bottom: 5px;
+}
+
+.copyright{
+   font-weight: bold;
+}
