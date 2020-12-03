@@ -1,3 +1,9 @@
+$(window).on('load', function() {
+	$('.preload').delay(100).fadeOut(1000, function() {
+	  $('body').css('overflow', 'visible');
+	});
+  });
+
 window.addEventListener("scroll", function() {
 	var header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 0);
