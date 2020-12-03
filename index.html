@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width">
     <title>Home</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class = "load">
+      <div class="preload">
+        <img class="airplane" src="airplane copy.png" alt="airplane" />
+        <h3 class = "land">Landing on the website...</h3>
+        <img src="cloud copy.png" alt="cloud1" class="cloud1" />
+        <img src="cloud copy.png" alt="cloud2" class="cloud2" />
+        <img src="cloud copy.png" alt="cloud3" class="cloud3" />
+      </div>
+   </div>
     <!--Navbar-->
     <header>
       <a class="" href="#"></a>
@@ -42,10 +52,10 @@
     <div><img class="caption" src="TG.png"></div>
   </div>
 	</div>
-  <div id="about">
+  <div id="about" data-aos="fade-up">
 		About Us
 	</div>
-	<div id="welcome">
+	<div id="welcome" data-aos="fade-down">
 		Welcome to TravelGo!
 		<p class="welcome-disc">TravelGo makes viewing places around the world easier.<br>
 		<br>
@@ -58,7 +68,7 @@
 		View the weather locations below of the top 3 tourist destinations!</p>
 	</div>
 
-<div id="weather">
+<div id="weather" data-aos="flip-up">
   <a class="weatherwidget-io" data-font="Roboto" data-label_1="BEIJING" data-label_2="WEATHER" data-theme="original" href="https://forecast7.com/en/39d90116d41/beijing/?unit=us">BEIJING WEATHER</a> 
   <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
@@ -74,8 +84,8 @@
 </div>
 <br>
 <br>
-<div id ="about">The Home Gallery</div>
-<div id="welcome2"><h4 class="hover-text">Hover and Click The Images To Learn More</h4>
+<div id ="about" data-aos="fade-up">The Home Gallery</div>
+<div id="welcome2" data-aos="fade-down"><h4 class="hover-text">Hover and Click The Images To Learn More</h4>
 <div class="containercar">
     <div class="carousel">
         <a href="#open-modal">
@@ -106,8 +116,8 @@
     </a>
        </div>
       </div>
-      <button class="next">Next</button>
-      <button class="prev">Prev</button>
+      <button class="next" id="gb10">Next</button>
+      <button class="prev" id="gb10">Prev</button>
     </div>
   </div>
 
@@ -269,5 +279,9 @@
   </div>
 </section>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>   
+      AOS.init(); 
+   </script>
   </body>
 </html>
