@@ -215,7 +215,6 @@ h3 {
 @media (min-width: 200px) and (max-width: 899px) {
 	#selections {
 		text-align: center;
-		background-color: lightcyan;
 		background-size: cover;
 		height: 20vh;
 		font-size: 38px;
@@ -340,7 +339,6 @@ h3 {
 @media (min-width: 900px) {
 	#selections {
 		text-align: center;
-		background-color: lightcyan;
 		background-size: cover;
 		height: 20vh;
 		font-size: 38px;
