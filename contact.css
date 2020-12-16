@@ -254,7 +254,6 @@ small {
 	}
 	.container {
 		height: auto;
-		width: 40%;
 		font-family: 'Hind';
 		margin: 0 auto;
 		margin-top: 40px;
@@ -268,18 +267,17 @@ small {
 	}
 	.container2 {
 		height: auto;
-		width: 40%;
-		font-family: 'Hind';
-		margin: 0 auto;
-		margin-top: 40px;
-		display: block;
-		background: white;
-		padding: 20px;
-		border-radius: 15px;
-		background-image: url(pink1.jpg);
-		position: absolute;
-		right: 20px;
-		bottom: -220px;
+    font-family: 'Hind';
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-image: url(pink1.jpg);
+    position: absolute;
+    right: 153px;
+    bottom: -650px;
 	}
 	form {
 		font-family: 'Hind';
@@ -289,11 +287,14 @@ small {
 		margin: 0 auto;
 		margin-bottom: 20px;
 	}
+	.name{
+		font-size: 15px;
+	}
 	.feedback-input {
 		color: #000;
 		font-family: 'Hind';
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 14.3px;
 		border-radius: 0;
 		margin-right: 0;
 		line-height: 22px;
@@ -342,16 +343,10 @@ small {
 		margin-top: -4px;
 		font-weight: 700;
 		transition: .3s ease;
-		animation: swing 3s infinite;
+		/*animation: swing 3s infinite;*/
 	}
-	.swing:hover
-{
-        -webkit-animation: swing 1s ease;
-        animation: swing 1s ease;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-}
-	@keyframes swing
+	
+	/*@keyframes swing
 {
 	0% {
 		transform: scale(1.0);
@@ -389,8 +384,8 @@ small {
 
 		transform: translateX(0px);
 		
-    }
-}
+    }*/
+
 	#button-blue:hover {
 		background-color: rgba(0, 0, 0, 0);
 		color: black;
