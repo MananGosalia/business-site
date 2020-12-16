@@ -324,6 +324,157 @@ small {
    left: 10px;
 }
 @media (min-width: 200px) and (max-width: 899px) {
+   .modal-window div:not(:last-of-type) {
+		margin-bottom: 15px;
+	}
+	.modal-window {
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.25);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.7s;
+	}
+	.modal-window:target {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+		border-radius: 20%;
+	}
+	.modal-window>div {
+		width: 480px;
+		height: 600px;
+		position: absolute;
+		top: 53%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 2em;
+		background-image: url("green1\ \(1\).png");
+		z-index: 100;
+		border-radius: 5%;
+	}
+	.modal-window header {
+		font-weight: bold;
+	}
+	.modal-window h1 {
+		font-size: 150%;
+		margin: 0 0 15px;
+	}
+	.modal-close {
+		color: blue;
+		line-height: 50px;
+		font-size: 80%;
+		position: relative;
+		left: 380px;
+		right: 0;
+		text-align: center;
+		top: 15;
+		width: 70px;
+		text-decoration: none;
+	}
+	.modal-close:hover {
+		color: black;
+	}
+	.modal-gal {
+		color: blue;
+		line-height: 50px;
+		position: relative;
+		left: -20px;
+		text-align: center;
+		top: 20px;
+		width: 70px;
+		text-decoration: none;
+	}
+	.modal-gal:hover {
+		color: black;
+   }
+   .themap{
+		color: darkmagenta;
+		position: relative;
+		top: -20px;
+		left: -65px;
+	}
+	.mapchina {
+		position: relative;
+		top: -70px;
+		left: -15px;
+		width: 200px;
+		height: 250px;
+	}
+	.content-title {
+		font-size: 12px;
+	}
+	.book {
+		position: relative;
+		top: -533px;
+		left: 450px;
+	}
+	.pictures {
+      position: relative;
+      top: -333px;
+      left: 200px;
+  }
+	.theimage {
+		position: relative;
+		top: 185px;
+		right: 140px;
+	}
+	.time {
+		position: relative;
+		top: -500px;
+		left: 440px;
+	}
+	.booking {
+		position: relative;
+		top: 125px;
+    left: -390px;
+	}
+	.thecurrent{
+		position: relative;
+    top: 160px;
+    left: -140px;
+	}
+	.btn2 {
+		display: inline-block;
+		text-decoration: none;
+		background: #5498e6;
+		color: #FFF;
+		width: 150px;
+		height: 80px;
+		line-height: 75px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: middle;
+		overflow: hidden;
+		transition: .4s;
+		position: relative;
+		top: 132px;
+    left: -440px;
+	}
+	.btn2:hover {
+		background: #668ad8;
+		color: black;
+		animation: light 2s linear infinite;
+	}
+
+
+
+	.beijing {
+		position: relative;
+		top: -50px;
+		left: -142px;
+	}
+	#beijingtime {
+		position: relative;
+		top: -50px;
+		left: -143px;
+		color: black;
+	}
   .container4 {
    display: grid;
    justify-content: center;
@@ -398,17 +549,17 @@ small {
 }
 .mapchina{
    position: relative;
-   top: -50px;
+   top: -70px;
 }
 .book{
    position: relative;
    top: -533px;
    left: 450px;
 }
-.pictures{
+.pictures {
    position: relative;
-   top: -533px;
-   left: 350px;
+   top: -353px;
+   left: 200px;
 }
 .time{
    position: relative;
@@ -417,8 +568,8 @@ small {
 }
 .booking{
    position: relative;
-   top: 10px;
-   left: 10px;
+   top: 115px;
+    left: -390px;
 }
 
 .btn2{
@@ -435,8 +586,8 @@ small {
     overflow: hidden;
     transition: .4s;
     position: relative;
-    top: 22px;
-    left: -40px;
+    top: 122px;
+    left: -440px;
   }
   
   .btn2:hover{
@@ -596,53 +747,116 @@ small {
 }
 
 .huairou{
-    position: relative;
-    right: 35px;
+   position: relative;
+   right: 165px;
+   top: -40px;
 }
-.shaanxi{
-    position: relative;
-    right: 0px;
+#walltime {
+   position: relative;
+   top: -40px;
+   right: 130px;
 }
-.shanghai{
-    position: relative;
-    right: 5px;
+.shaanxi {
+   position: relative;
+   top: -40px;
+   right: 142px;
+}
+#shaanxitime {
+   position: relative;
+   top: -40px;
+   left: -140px;
+}
+.shanghai {
+   position: relative;
+   right: 150px;
+   top: -40px;
+}
+#shanghaitime {
+   position: relative;
+   right: 140px;
+   top: -40px;
 }
 
-.shizuoka{
-    position: relative;
-    right: 10px;
-}
-.chiyoda{
-    position: relative;
-    right: 5px;
-}
-.kyoto{
+
+.shizuoka {
    position: relative;
-   right: -10px;
+   right: 150px;
+   top: -40px;
 }
-#kyototime{
+#shizuokatime{
    position: relative;
-   right: -3px;
+   right: 140px;
+    top: -40px;
 }
-.tokyo{
+.chiyoda {
    position: relative;
-   right: -5px;
+   right: 145px;
+   top: -40px;
 }
-.dubai1{
+#chiyodatime {
    position: relative;
-   left: 5px;
+   right: 142px;
+   top: -40px;
 }
-.dubai2{
+.kyoto {
    position: relative;
-   left: 5px;
+   right: 135px;
+   top: -40px;
 }
-.dubai3{
+#kyototime {
    position: relative;
-   left: 5px;
+   right: 143px;
+   top: -40px;
 }
-.dubai4{
+.tokyo {
    position: relative;
-   left: 5px;
+   right: 135px;
+   top: -40px;
+}
+#tokyotime {
+   position: relative;
+   right: 140px;
+   top: -40px;
+}
+.dubai1 {
+   position: relative;
+   left: -135px;
+   top: -40px;
+}
+#dubai1time {
+   position: relative;
+   right: 140px;
+   top: -40px;
+}
+.dubai2 {
+   position: relative;
+   left: -135px;
+   top: -40px;
+}
+#dubai2time {
+   position: relative;
+   right: 142px;
+   top: -40px;
+}
+.dubai3 {
+   position: relative;
+   left: -135px;
+   top: -35px;
+}
+#dubai3time {
+   position: relative;
+   left: -140px;
+   top: -40px;
+}
+.dubai4 {
+   position: relative;
+   left: -135px;
+   top: -40px;
+}
+#dubai4time {
+   position: relative;
+   left: -140px;
+   top: -40px;
 }
 .container3 {
    display: grid;
@@ -880,81 +1094,122 @@ flex-direction: row;
   position: relative;
   left: -5px;
 }
-.huairou{
-    position: relative;
-    right: 35px;
+.huairou {
+   position: relative;
+   right: 45px;
+   top: -0px;
+}
+#walltime {
+   position: relative;
+   top: 0px;
+   right: 5px;
 }
 .shaanxi{
     position: relative;
+    top: 0px;
     right: 10px;
 }
 .shanghai{
     position: relative;
+    top: 0px;
     right: 15px;
 }
 
 .shizuoka{
     position: relative;
     right: 10px;
+    top: 0px;
 }
 
+#shizuokatime{
+   position: relative;
+   right: 0px;
+    top: 0px;
+}
 .chiyoda{
     position: relative;
     right: 10px;
+    top: 0px;
 }
 
 #beijingtime{
    position: relative;
    left: -7px;
 }
-#shaanxitime{
+#shaanxitime {
    position: relative;
+   top: -0px;
    left: -5px;
 }
 #shanghaitime{
    position: relative;
    left: -7px;
+   top: 0px;
+}
+.kyoto {
+   position: relative;
+   right: 0px;
+   top: -0px;
 }
 #kyototime{
    position: relative;
    left: -7px;
+   top: -5px;
 }
 .tokyo{
    position: relative;
    right: 2px;
+   top: 0px;
 }
 #tokyotime{
    position: relative;
    right: 5px;
+   top: 0px;
 }
-#chiyodatime{
-   position: relative;
-   right: 5px;
-}
-
-#dubai1time{
+#chiyodatime {
    position: relative;
    right: 7px;
+   top: 0px;
 }
-.dubai2{
+.dubai1 {
+   position: relative;
+   left: 0px;
+    top: -0px;
+}
+#dubai1time {
+   position: relative;
+   right: 7px;
+   top: 0px;
+}
+.dubai2 {
    position: relative;
    left: -2px;
+   top: 0px;
 }
 #dubai2time{
    position: relative;
-   left: -5px;
+   right: 7px;
+   top: 0px;
+}
+.dubai3 {
+   position: relative;
+   left: -2px;
+   top: -0px;
 }
 #dubai3time{
    position: relative;
    left: -5px;
+   top: -5px;
 }
 .dubai4{
    position: relative;
    left: -3px;
+   top: 0px;
 }
 #dubai4time{
    position: relative;
    left: -5px;
+   top: 0px;
 }
 .mapchina{
    position: relative;
@@ -1074,6 +1329,7 @@ flex-direction: row;
 section.footer {
    background-color: purple;
    position: relative;
+   top: 120px;
    padding:25px 0px;
 }
 .footer__content{
