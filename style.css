@@ -735,11 +735,81 @@ small {
 	opacity: 1;
 }
 
-
-
-
-
 @media (min-width: 200px) and (max-width: 899px) {
+	#welcome {
+		background: url("purple3.jpg");
+		background-size: cover;
+		height: 65vh;
+	}
+	.modal-window div:not(:last-of-type) {
+		margin-bottom: 15px;
+	}
+	.modal-window {
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.25);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.7s;
+	}
+	.modal-window:target {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+		border-radius: 20%;
+	}
+	.modal-window>div {
+		width: 480px;
+		height: 600px;
+		position: absolute;
+		top: 53%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 2em;
+		background-image: url("red1.jpg");
+		z-index: 100;
+		border-radius: 5%;
+	}
+	.modal-window header {
+		font-weight: bold;
+	}
+	.modal-window h1 {
+		font-size: 150%;
+		margin: 0 0 15px;
+	}
+	.modal-close {
+		color: lightblue;
+		line-height: 50px;
+		font-size: 80%;
+		position: relative;
+		left: 380px;
+		right: 0;
+		text-align: center;
+		top: 15;
+		width: 70px;
+		text-decoration: none;
+	}
+	.modal-close:hover {
+		color: black;
+	}
+	.modal-gal {
+		color: lightblue;
+		line-height: 50px;
+		position: relative;
+		left: -20px;
+		text-align: center;
+		top: 20px;
+		width: 70px;
+		text-decoration: none;
+	}
+	.modal-gal:hover {
+		color: black;
+	}
 	.next, .prev {
 		color: #444;
 		position: absolute;
@@ -754,26 +824,49 @@ small {
 	}
 	.next:hover, .prev:hover {
 		color: #000;
-		animation: roll 1s infinite;
-	transform: rotate(30deg);
 	}
 	.next:active, .prev:active {
 		top: -140px;
 		box-shadow: 0 1px 0 #999;
 	}
-	@keyframes roll {
-	0% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
 	.next {
-		left: 25em;
+		left: 20em;
+		padding: 0.43em 1em;
 	}
 	.prev {
-		right: 25em;
+		right: 20em;
+		padding: 0.43em 1em;
+	}
+	.containercar {
+		margin: -100px auto;
+		width: 150px;
+		height: 100px;
+		position: relative;
+		top: 300px;
+		perspective: 1000px;
+	}
+	.forb { 
+		width: 150px;
+		 height: 100px;
+	} 
+	.eif{ 
+		width: 150px;
+		 height: 100px;
+	} 
+	.cpark{ 
+		width: 150px;
+		 height: 100px;
+	} 
+	.item {
+		display: block;
+		position: absolute;
+		background: #000;
+		width: 150px;
+		height: 100px;
+		line-height: 200px;
+		font-size: 5em;
+		text-align: center;
+		color: #FFF;
 	}
 	.hover-text {
 		font-size: 25px;
@@ -785,7 +878,7 @@ small {
 		position: relative;
 		top: 30px;
 		text-align: center;
-		font-size: 22px;
+		font-size: 14px;
 		color: black;
 	}
 	.disc {
@@ -801,9 +894,18 @@ small {
 		top: -50px;
 		left: 140px;
 	}
+	.themap{
+		color: yellow;
+		position: relative;
+		top: -20px;
+		left: -65px;
+	}
 	.mapchina {
 		position: relative;
-		top: -50px;
+		top: -70px;
+		left: -15px;
+		width: 200px;
+		height: 250px;
 	}
 	.content-title {
 		font-size: 12px;
@@ -815,8 +917,13 @@ small {
 	}
 	.pictures {
 		position: relative;
-		top: -533px;
-		left: 350px;
+		top: -347px;
+		left: 200px;
+	}
+	.theimage {
+		position: relative;
+		top: 185px;
+		right: 140px;
 	}
 	.time {
 		position: relative;
@@ -825,8 +932,13 @@ small {
 	}
 	.booking {
 		position: relative;
-		top: 10px;
-		left: 10px;
+		top: 125px;
+    left: -390px;
+	}
+	.thecurrent{
+		position: relative;
+    top: 160px;
+    left: -140px;
 	}
 	.btn2 {
 		display: inline-block;
@@ -842,8 +954,8 @@ small {
 		overflow: hidden;
 		transition: .4s;
 		position: relative;
-		top: 22px;
-		left: -40px;
+		top: 132px;
+    left: -440px;
 	}
 	.btn2:hover {
 		background: #668ad8;
@@ -855,31 +967,40 @@ small {
 
 	.beijing {
 		position: relative;
-		top: -10px;
-		left: 2px;
+		top: -50px;
+		left: -142px;
 	}
 	#beijingtime {
 		position: relative;
-		top: -10px;
+		top: -50px;
+		left: -143px;
 		color: black;
 	}
 	.parishead {
 		position: relative;
-		left: 5px;
-	}
+    top: -50px;
+    left: -140px;
+}
 	#paristime {
 		position: relative;
-		left: -3px;
+		top: -51px;
+		left: -149px;
 	}
 	.city {
 		position: relative;
-		top: -10px;
+		left: -165px;
+		top: -50px;
 	}
 	#nytime {
 		position: relative;
-		top: -15px;
+		top: -45px;
+		left: -140px;
 		color: black;
 	}
+
+
+
+  
 	section.footer {
 		background-color: purple;
 		position: relative;
@@ -981,6 +1102,11 @@ small {
 }
 
 @media (min-width: 900px) {
+	#welcome {
+		background: url("purple3.jpg");
+		background-size: cover;
+		height: 80vh;
+	}
 	.next, .prev {
 		color: #444;
 		position: absolute;
@@ -1317,6 +1443,8 @@ small {
 		position: relative;
 		top: 10px;
 	}
+  
 }
+
 
 
